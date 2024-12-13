@@ -1,0 +1,83 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ffd700;
+    transform: translateY(-3px);
+  }
+  
+  .menu a.active {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+  }
+  
+  /* Section Styling */
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #home { background: #282c34; color: #fff; }
+  #about { background: #4a90e2; color: #fff; }
+  #agenda { background: #34495e; color: #fff; }
+  #speakers { background: #27ae60; color: #fff; }
+  #workshops { background: #e67e22; color: #fff; }
+  #competitions { background: #c0392b; color: #fff; }
+  #sponsors { background: #8e44ad; color: #fff; }
+  #faqs { background: #2980b9; color: #fff; }
+  #register { background: #16a085; color: #fff; }
